@@ -1,0 +1,4 @@
+*.obj
+*.res
+*.pdb
+ABrowser.exe

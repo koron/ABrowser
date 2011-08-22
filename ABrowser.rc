@@ -28,8 +28,8 @@ LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2004,10,31,78
- PRODUCTVERSION 1,3,7,22
+ FILEVERSION 2011,8,22,79
+ PRODUCTVERSION 1,3,8,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -47,14 +47,14 @@ BEGIN
             VALUE "Comments", "ANSIカラーをサポートしたテキストブラウザ\0"
             VALUE "CompanyName", "KaoriYa\0"
             VALUE "FileDescription", "ANSIテキストブラウザ\0"
-            VALUE "FileVersion", "2004, 10, 31, 78\0"
+            VALUE "FileVersion", "2011, 8, 22, 79\0"
             VALUE "InternalName", "あ・ぶら\0"
-            VALUE "LegalCopyright", "2004 (C) MURAOKA Taro (KoRoN)/KaoriYa\0"
+            VALUE "LegalCopyright", "2011 (C) MURAOKA Taro (KoRoN)/KaoriYa\0"
             VALUE "LegalTrademarks", "油鵜座(TM)\0"
             VALUE "OriginalFilename", "ABrowser.exe\0"
             VALUE "PrivateBuild", "\0"
             VALUE "ProductName", "ANSI text Browser for Windows 『油鵜座』\0"
-            VALUE "ProductVersion", "1, 3, 7, 22\0"
+            VALUE "ProductVersion", "1, 3, 8, 0\0"
             VALUE "SpecialBuild", "\0"
         END
     END

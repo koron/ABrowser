@@ -1,21 +1,10 @@
-HEADERS= \
-	ABrowser.h \
-	CABr.h \
-	CABrView.h \
-	CCmdLine.h \
-	CFindWnd.h \
-	CMem.h \
-	CReg.h \
-	CStatusW.h \
-	CTxtFile.h \
-	CTxtQry.h \
-	CWhlMous.h \
-	EdCmdDlg.h \
-	resource.h \
-	str_repl.h \
-	winapiex.h \
+# USAGE:
+#  Build debug version:		nmake
+#  Build release version:	nmake nodebug=1
 
-SOURCES_CPP= \
+TARGET_EXE = ABrowser.exe
+
+SRCS =	\
 	AB_main.cpp \
 	CABr.cpp \
 	CABrView.cpp \
@@ -28,42 +17,60 @@ SOURCES_CPP= \
 	CTxtQry.cpp \
 	CWhlMous.cpp \
 	EdCmdDlg.cpp \
-
-SOURCES_C= \
 	str_repl.c \
 	winapiex.c \
 
-OBJS= \
-	AB_main.obj \
-	CABr.obj \
-	CABrView.obj \
-	CCmdLine.obj \
-	CFindWnd.obj \
-	CMem.obj \
-	CReg.obj \
-	CStatusW.obj \
-	CTxtFile.obj \
-	CTxtQry.obj \
-	CWhlMous.obj \
-	EdCmdDlg.obj \
-	str_repl.obj \
-	winapiex.obj \
+RESSRCS = ABrowser.rc
 
-.SUFFIXES: .obj .cpp
+DEFINES = \
+	/D_CRT_SECURE_NO_WARNINGS=1 \
+	/D_BIND_TO_CURRENT_VCLIBS_VERSION=1 \
 
-all : ABrowser.exe
+CCFLAGS = $(DEFINES)
+CPPFLAGS = $(DEFINES)
 
-ABrowser.exe : $(OBJS)
-	cl /Fe$@ $(OBJS) shell32.lib advapi32.lib user32.lib gdi32.lib comdlg32.lib comctl32.lib
+LIBS = shell32.lib
 
-.cpp.obj :
-	cl /I. /c $<
+############################################################################
+# WINDOWS BUILD SETTINGS.
 
-.c.obj :
-	cl /I. /c $<
+APPVER = 5.0
+TARGET = WINNT
+TARGETLANG = LANG_JAPANESE
+_WIN32_IE = 0x0600
+!INCLUDE <Win32.Mak>
 
-ABrowser.res : ABrowser.rc
-	rc ABrowser.rc
+############################################################################
+# BUILD RULES
+
+OBJS1 = $(SRCS:.cpp=.obj)
+OBJS = $(OBJS1:.c=.obj)
+RESOBJS = $(RESSRCS:.rc=.res)
+
+build : $(TARGET_EXE)
 
 clean :
-	-rm -f *.o *.res
+	del /F *.obj
+	del /F *.res
+	del /F *.exe
+	del /F *.exe.manifest
+	del /F *.pdb
+	del /F tags
+
+tags: *.cpp *.hpp *.c *.h
+	ctags -R *.cpp *.hpp *.c *.h
+
+rebuild : clean tags build
+
+.PHONY: build clean rebuild archive
+
+.c.obj ::
+	$(CC) $(cdebug) $(cflags) $(cvarsdll) $(CPPFLAGS) /c $<
+.cpp.obj ::
+	$(CC) $(cdebug) $(cflags) $(cvarsdll) $(CPPFLAGS) /c $<
+
+$(TARGET_EXE) : $(OBJS) $(RESOBJS)
+	$(link) $(ldebug) $(guilflags) $(guilibsdll) \
+		/OUT:$@ $(LINKFLAGS) $(OBJS) $(RESOBJS) $(LIBS)
+	IF EXIST $@.manifest \
+	    mt -nologo -manifest $@.manifest -outputresource:$@;1
