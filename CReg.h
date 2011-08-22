@@ -2,7 +2,7 @@
 //	CReg.h:ClassRegistoryÉwÉbÉ_Å[                              Written by KoRoN
 //                                                                 Version 1.00
 //                                                                   1997.09.25
-// Last Change: 00:30:54 25-Sep-2000.
+// Last Change: 22-Aug-2011.
 
 #ifndef		CREG_INCLUDED
 
@@ -16,6 +16,7 @@ class ClassRegistory
 	public:
 		long	GetErrorCode();
 		long	GetValue(char *pszValueName, char *pszValue, DWORD dwSize);
+		long	GetValueLength(char *pszValueName, DWORD *dwSize);
 		long	GetValue(char *pszValueName, DWORD *dwValue);
 		long	SetValue(char *pszValueName, char *pszValue);
 		long	SetValue(char *pszValueName, DWORD dwValue = 0);

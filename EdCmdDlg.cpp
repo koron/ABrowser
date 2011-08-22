@@ -2,13 +2,15 @@
 /*
  * EdCmdDlg.cpp - Editor command setting dialog
  *
- * Last Change: 13:46:56 11-Mar-2001.
+ * Last Change: 22-Aug-2011.
  * Written by:  Muraoka Taro  <koron@tka.att.ne.jp>
  *
  * Copy right (C) 2000 KoRoN
  */
 #define WIN32_LEAN_AND_MEAN
 #include "EdCmdDlg.h"
+#include "CReg.h"
+#define _INC_COMMDLG
 #include "winapiex.h"
 
 EditorCommandDialog::EditorCommandDialog()
@@ -31,20 +33,20 @@ EditorCommandDialog::doModal(HWND hwndParent)
     LRESULT
 EditorCommandDialog::onInitDialog(HWND hwndCtrl)
 {
-    CRegKey regEditCmd;
+    ClassRegistory cEditCmd(REGKEY_BASE, HKEY_CURRENT_USER);
 
-    if (regEditCmd.Create(HKEY_CURRENT_USER, REGKEY_BASE) == ERROR_SUCCESS)
+    if (cEditCmd.GetErrorCode() == CREG_SUCCESS)
     {
 	DWORD dwBufSize;
 	char *pszFmt;
 
 	for (int loop = 0; loop < 2; ++loop)
 	{
-	    if (regEditCmd.QueryValue((LPTSTR)0, REGKEY_EDITCMD, &dwBufSize)
-		    == ERROR_SUCCESS)
+	    if (cEditCmd.GetValueLength(REGKEY_EDITCMD, &dwBufSize)
+		    == CREG_SUCCESS)
 	    {
 		char *pszFmt = new char[dwBufSize];
-		regEditCmd.QueryValue(pszFmt, REGKEY_EDITCMD, &dwBufSize);
+		cEditCmd.GetValue(REGKEY_EDITCMD, pszFmt, dwBufSize);
 		SetDlgItemText(m_hWnd, IDC_EXECMD_FORMAT, pszFmt);
 		delete[] pszFmt;
 		break;
@@ -52,10 +54,9 @@ EditorCommandDialog::onInitDialog(HWND hwndCtrl)
 	    else if (!loop)
 	    {
 		pszFmt = DEFAUTL_REG_EDITCMD;
-		regEditCmd.SetValue(pszFmt, REGKEY_EDITCMD);
+		cEditCmd.SetValue(REGKEY_EDITCMD, pszFmt);
 	    }
 	}
-	regEditCmd.Close();
     }
     else
 	_RPT0(_CRT_ASSERT, "EditorCommandDialog::Cannot create registy\r\n");
@@ -76,6 +77,7 @@ EditorCommandDialog::onCommand(WORD wNotifyCode, WORD wID, HWND hwndCtrl)
     {
 	case IDC_EXE_BROWSE:
 	    {
+		extern OPENFILENAME* Init_OPENFILENAME(OPENFILENAME*);
 		char filename[MAX_PATH];
 		OPENFILENAME ofn;
 
@@ -105,12 +107,10 @@ EditorCommandDialog::onCommand(WORD wNotifyCode, WORD wID, HWND hwndCtrl)
 		    else
 		    {
 			_RPT1(_CRT_WARN, "format=%s\r\n", pszFmt);
-			CRegKey regEditCmd;
-			if (regEditCmd.Create(HKEY_CURRENT_USER, REGKEY_BASE)
-				== ERROR_SUCCESS)
+			ClassRegistory cEditCmd(REGKEY_BASE, HKEY_CURRENT_USER);
+			if (cEditCmd.GetErrorCode() == CREG_SUCCESS)
 			{
-			    regEditCmd.SetValue(pszFmt, REGKEY_EDITCMD);
-			    regEditCmd.Close();
+			    cEditCmd.SetValue(REGKEY_EDITCMD, pszFmt);
 			}
 			else
 			    _RPT0(_CRT_ASSERT, "Cannot create registy key\r\n");
