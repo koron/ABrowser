@@ -3,7 +3,7 @@
 // ANSI text Browser                                           since 1997.08.28
 //	CABrView.cpp:ClassABrowserViewクラスコード                 Written by KoRoN
 //                                                                 Version 1.10
-// Last Change: 31-Oct-2004.
+// Last Change: 22-Aug-2011.
 
 #include "ABrowser.h"
 #include "CABrView.h"
@@ -904,8 +904,9 @@ ClassABrowserView::Find(char *pszFind, bool reverse)
 			}
 			if (reverse)
 			{
+				int i;
 				--nColumn;
-				for (int i = 0; i < nColumn; ++i)
+				for (i = 0; i < nColumn; ++i)
 					if (IsDBCSLeadByte(psz[i]))
 						++i;
 				nColumn -= i - nColumn;
