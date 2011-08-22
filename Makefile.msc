@@ -1,0 +1,69 @@
+HEADERS= \
+	ABrowser.h \
+	CABr.h \
+	CABrView.h \
+	CCmdLine.h \
+	CFindWnd.h \
+	CMem.h \
+	CReg.h \
+	CStatusW.h \
+	CTxtFile.h \
+	CTxtQry.h \
+	CWhlMous.h \
+	EdCmdDlg.h \
+	resource.h \
+	str_repl.h \
+	winapiex.h \
+
+SOURCES_CPP= \
+	AB_main.cpp \
+	CABr.cpp \
+	CABrView.cpp \
+	CCmdLine.cpp \
+	CFindWnd.cpp \
+	CMem.cpp \
+	CReg.cpp \
+	CStatusW.cpp \
+	CTxtFile.cpp \
+	CTxtQry.cpp \
+	CWhlMous.cpp \
+	EdCmdDlg.cpp \
+
+SOURCES_C= \
+	str_repl.c \
+	winapiex.c \
+
+OBJS= \
+	AB_main.obj \
+	CABr.obj \
+	CABrView.obj \
+	CCmdLine.obj \
+	CFindWnd.obj \
+	CMem.obj \
+	CReg.obj \
+	CStatusW.obj \
+	CTxtFile.obj \
+	CTxtQry.obj \
+	CWhlMous.obj \
+	EdCmdDlg.obj \
+	str_repl.obj \
+	winapiex.obj \
+
+.SUFFIXES: .obj .cpp
+
+all : ABrowser.exe
+
+ABrowser.exe : $(OBJS)
+	cl /Fe$@ $(OBJS) shell32.lib advapi32.lib user32.lib gdi32.lib comdlg32.lib comctl32.lib
+
+.cpp.obj :
+	cl /I. /c $<
+
+.c.obj :
+	cl /I. /c $<
+
+ABrowser.res : ABrowser.rc
+	rc ABrowser.rc
+
+clean :
+	-rm -f *.o *.res
