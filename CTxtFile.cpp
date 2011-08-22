@@ -3,14 +3,11 @@
 // ClassTextFileクラス                                         since 1997.08.30
 //	CTxtFile.cpp:クラスコード                                  Written by KoRoN
 //                                                                 Version 1.00
-// Last Change: 30-Mar-2002.
+// Last Change: 22-Aug-2011.
 
 #define WIN32_LEAN_AND_MEAN
 
-#include <windows.h>
-#include <winnls.h>
-#include <stdio.h>
-#include <crtdbg.h>
+#include "ABrowser.h"
 #include "CTxtFile.h"
 
 #define READ_BUFFER_SIZE 65536
@@ -730,18 +727,18 @@ FilterUNICODEtoSJIS()
 	{
 		int len = 2;
 		char buf[3];
-		unsigned short readBuf;
+		wchar_t readBuf;
 
 		if (dwFilter == CTF_FILTER_UTF8)
-			readBuf = (unsigned short)utf8ptr_to_ucs4(ptrRead, &len);
+			readBuf = (wchar_t)utf8ptr_to_ucs4(ptrRead, &len);
 		else
 			readBuf = endian_flag ?
-				(unsigned short)ptrRead[1] | (unsigned short)ptrRead[0] << 8
-				:(unsigned short)ptrRead[0] | (unsigned short)ptrRead[1] << 8;
+				(wchar_t)ptrRead[1] | (unsigned short)ptrRead[0] << 8
+				:(wchar_t)ptrRead[0] | (unsigned short)ptrRead[1] << 8;
 		dwReadSize += len;
 		ptrRead += len;
 
-		len = WideCharToMultiByte(CP_ACP, NULL,
+		len = WideCharToMultiByte(CP_ACP, 0,
 				&readBuf, 1, buf, sizeof(buf), NULL, NULL);
 		memcpy(ptrWrite, buf, len);
 		ptrWrite += len;

@@ -1,0 +1,55 @@
+HEADERS= \
+	ABrowser.h \
+	CABr.h \
+	CABrView.h \
+	CCmdLine.h \
+	CFindWnd.h \
+	CMem.h \
+	CReg.h \
+	CStatusW.h \
+	CTxtFile.h \
+	CTxtQry.h \
+	CWhlMous.h \
+	EdCmdDlg.h \
+	resource.h \
+	str_repl.h \
+	winapiex.h \
+
+SOURCES_CPP= \
+	AB_main.cpp \
+	CABr.cpp \
+	CABrView.cpp \
+	CCmdLine.cpp \
+	CFindWnd.cpp \
+	CMem.cpp \
+	CReg.cpp \
+	CStatusW.cpp \
+	CTxtFile.cpp \
+	CTxtQry.cpp \
+	CWhlMous.cpp \
+	EdCmdDlg.cpp \
+
+SOURCES_C= \
+	str_repl.c \
+	winapiex.c \
+
+OBJS=$(SOURCES_CPP:%.cpp=%.o) $(SOURCES_C:%.c=%.o) ABrowser.res
+
+.SUFFIXES: .o .cpp
+
+all : ABrowser.exe
+
+ABrowser.exe : $(OBJS)
+	g++ -o $@  $(OBJS) -lgdi32 -lcomdlg32 -lcomctl32 -mwindows
+
+.cpp.o :
+	g++ -I. --input-charset=cp932 --exec-charset=cp932 -c $<
+
+.c.o :
+	gcc -I. -c $<
+
+ABrowser.res : ABrowser.rc
+	windres -l 411 -c cp932 -O coff ABrowser.rc ABrowser.res
+
+clean :
+	-rm -f *.o *.res

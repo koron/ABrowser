@@ -3,7 +3,7 @@
 // ANSIBrowserクラス                                           since 1997.09.03
 //	CABr.cpp:ClassABrowserコード                               Written by KoRoN
 //                                                                  Version 1.1
-// Last Change: 30-Oct-2004.
+// Last Change: 22-Aug-2011.
 
 #include "ABrowser.h"
 #include "CABr.h"
@@ -47,44 +47,27 @@ ClassABrowser::openEditor()
 	}
 
 	// Get editor command format from registry.
-	DWORD dwBufSize = 0;
-	CRegKey regEditCmd;
-	if (regEditCmd.Create(HKEY_CURRENT_USER, REGKEY_BASE) != ERROR_SUCCESS)
-	{
-		_RPT0(_CRT_WARN, "regEditCmd.Open() failed\n");
-		return false;
-	}
+	char szFmt[MAX_PATH];
+	strcpy(szFmt, DEFAUTL_REG_EDITCMD);
 
+	ClassRegistory	cEditCmd(REGKEY_BASE);
 	// Set default editor command, if there are no registy entry.
-	char *pszFmt = DEFAUTL_REG_EDITCMD;
-	if (regEditCmd.QueryValue((LPTSTR)0, REGKEY_EDITCMD, &dwBufSize)
-			!= ERROR_SUCCESS)
+	if (cEditCmd.GetErrorCode() != CREG_SUCCESS)
 	{
-	    regEditCmd.SetValue(pszFmt, REGKEY_EDITCMD);
-		dwBufSize = lstrlen(pszFmt) + 1;
+		cEditCmd.SetValue(REGKEY_EDITCMD, DEFAUTL_REG_EDITCMD);
 	}
-
-	// Copy of editor command from registry.
-	pszFmt = new char[dwBufSize];
-	if (!pszFmt)
-	{
-		regEditCmd.Close();
-		return false;
-	}
-	regEditCmd.QueryValue(pszFmt, REGKEY_EDITCMD, &dwBufSize);
-	regEditCmd.Close();
+	cEditCmd.GetValue(REGKEY_EDITCMD, szFmt, sizeof(szFmt));
 
 	// 環境変数を展開する。
-	DWORD len = ExpandEnvironmentStrings(pszFmt, 0, 0);
+	DWORD len = ExpandEnvironmentStrings(szFmt, 0, 0);
 	char *newcmd = len > 0 ? new char[len] : NULL;
 	if (newcmd)
 	{
-		ExpandEnvironmentStrings(pszFmt, newcmd, len);
+		ExpandEnvironmentStrings(szFmt, newcmd, len);
 		_RPT0(_CRT_WARN, "ExpandEnvironmentStrings()\n");
-		_RPT1(_CRT_WARN, "    FROM: %s\n", pszFmt);
+		_RPT1(_CRT_WARN, "    FROM: %s\n", szFmt);
 		_RPT1(_CRT_WARN, "    TO:   %s\n", newcmd);
-		delete[] pszFmt; pszFmt = NULL;
-		pszFmt = newcmd;
+		strncpy(szFmt, newcmd, MAX_PATH);
 	}
 
 	// Replace "$" on format string with filename lines or etc.
@@ -94,12 +77,12 @@ ClassABrowser::openEditor()
 		{'l', 'd', (void*)&nline},
 		{'\0','\0', 0},
 	};
-	dwBufSize = str_replace(0, 0, pszFmt, rep_data);
+	DWORD dwBufSize = str_replace(0, 0, szFmt, rep_data);
 	char *pszCmd = new char[dwBufSize];
 
 	if (pszCmd)
 	{
-		dwBufSize = str_replace(pszCmd, dwBufSize, pszFmt, rep_data);
+		dwBufSize = str_replace(pszCmd, dwBufSize, szFmt, rep_data);
 		_RPT1(_CRT_WARN, "Editor command: %s\n", pszCmd);
 
 		// Execute editor command
@@ -114,7 +97,6 @@ ClassABrowser::openEditor()
 			m_bEditOpened = true;
 		delete[] pszCmd;
 	}
-	delete[] pszFmt;
 
 	return true;
 }

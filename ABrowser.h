@@ -2,7 +2,7 @@
 /*
  * ABrowser.h - ABrowser united header
  *
- * Last Change: 31-Oct-2004.
+ * Last Change: 22-Aug-2011.
  * Written by:  Muraoka Taro  <koron@tka.att.ne.jp>
  */
 #ifndef ABROWSER_H
@@ -11,9 +11,14 @@
 #include <windows.h>
 #include <commdlg.h>
 #include <commctrl.h>
-#include <atlbase.h>
 #include <stdio.h>
+#ifdef __MINGW32__
+#define _RPT0(a1, a2) fprintf(stderr, a2)
+#define _RPT1(a1, a2, a3) fprintf(stderr, a2, a3)
+#define _RPT2(a1, a2, a3, a4) fprintf(stderr, a2, a3, a4)
+#else
 #include <crtdbg.h>
+#endif
 #include "resource.h"
 
 #define ABROWSER_VERSION "1.3.7"

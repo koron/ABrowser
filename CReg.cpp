@@ -2,7 +2,7 @@
 //	CReg.cpp:ClassRegistoryÉRÅ[Éh                              Written by KoRoN
 //                                                                 Version 1.00
 //                                                                   1997.09.01
-// Last Change: 01:18:13 25-Sep-2000.
+// Last Change: 22-Aug-2011.
 
 #define		WIN32_LEAN_AND_MEAN
 
@@ -116,6 +116,23 @@ long ClassRegistory::GetValue(char *pszValueName,
 		&dwType,
 		(LPBYTE)pszValue,
 		&dwSize
+		);
+	if (nErrorCode != ERROR_SUCCESS) return CREG_ERROR;
+	return CREG_SUCCESS;
+}
+
+// GetValueLength() ///////////////////////////////////////////////////////1.00
+long ClassRegistory::GetValueLength(char *pszValueName, DWORD *dwSize)
+{
+	DWORD	dwType = REG_SZ;
+
+	nErrorCode = RegQueryValueEx(
+		hKey,
+		pszValueName,
+		NULL,
+		&dwType,
+		(LPBYTE)NULL,
+		dwSize
 		);
 	if (nErrorCode != ERROR_SUCCESS) return CREG_ERROR;
 	return CREG_SUCCESS;
