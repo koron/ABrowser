@@ -77,7 +77,7 @@ EditorCommandDialog::onCommand(WORD wNotifyCode, WORD wID, HWND hwndCtrl)
     {
 	case IDC_EXE_BROWSE:
 	    {
-		extern OPENFILENAME* Init_OPENFILENAME(OPENFILENAME*);
+		extern OPENFILENAME* WINAPI Init_OPENFILENAME(OPENFILENAME*);
 		char filename[MAX_PATH];
 		OPENFILENAME ofn;
 
