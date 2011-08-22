@@ -1,0 +1,361 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2004,10,31,78
+ PRODUCTVERSION 1,3,7,22
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "ANSIカラーをサポートしたテキストブラウザ\0"
+            VALUE "CompanyName", "KaoriYa\0"
+            VALUE "FileDescription", "ANSIテキストブラウザ\0"
+            VALUE "FileVersion", "2004, 10, 31, 78\0"
+            VALUE "InternalName", "あ・ぶら\0"
+            VALUE "LegalCopyright", "2004 (C) MURAOKA Taro (KoRoN)/KaoriYa\0"
+            VALUE "LegalTrademarks", "油鵜座(TM)\0"
+            VALUE "OriginalFilename", "ABrowser.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ANSI text Browser for Windows 『油鵜座』\0"
+            VALUE "ProductVersion", "1, 3, 7, 22\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ABROWSER            ICON    DISCARDABLE     "Resource\\ABrowser.ico"
+IDI_PAPER               ICON    DISCARDABLE     "Resource\\ABpaper.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "開く(&O)...\tCtrl+O",         IDC_FILE_OPEN
+        MENUITEM "エディタで開く(&E)...\tV",    IDC_EDITOR_KICK
+        MENUITEM "Google検索...\tCtrl+G",       IDC_WEB_GOOGLE
+        MENUITEM SEPARATOR
+        POPUP "漢字コード(&K)"
+        BEGIN
+            MENUITEM "&ShiftJIS\tF6",               IDC_FILTER_SJIS
+            MENUITEM "&euc-jp\tF7",                 IDC_FILTER_EUC
+            MENUITEM "&JIS\tF8",                    IDC_FILTER_JIS
+            MENUITEM "&Unicode\tF9",                IDC_FILTER_UNICODE
+            MENUITEM "UTF-&8\tF10",                 IDC_FILTER_UTF8
+            MENUITEM SEPARATOR
+            MENUITEM "自動選択(&A)\tF5",            IDC_FILTER_AUTO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "終了(&X)\tCtrl+W",            IDC_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "コピー(&C)\tCtrl+C",          IDC_TEXT_COPY, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "検索(&F)\tF3",                IDC_FIND, GRAYED
+        MENUITEM "逆方向検索(&R)\tShift+F3",    IDC_FINDPREV, GRAYED
+        MENUITEM "新規検索(&N)\tCtrl+F",        IDC_FINDNEW, GRAYED
+        MENUITEM "新規逆方向検索(&P)\tCtrl+Shift+F", IDC_FINDNEWPREV, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "全文を選択(&A)\tCtrl+A",      IDC_QUERYALL, GRAYED
+    END
+    POPUP "設定(&S)"
+    BEGIN
+        MENUITEM "フォント(&N)...\tCtrl+N",     IDC_FONT_SELECT
+        MENUITEM "タブ4<>8切替\tTab",           IDC_TAB_CHANGE
+        MENUITEM "エディタ設定(&E)...\tCtrl+Shift+V", IDC_EDITOR_SELECT
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "幅自動設定(&W)\tCtrl+H",      IDC_WIN_WIDTH
+        MENUITEM "高さ自動設定(&H)\tCtrl+V",    IDC_WIN_HEIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "カラー反転(&R)\tCtrl+R",      IDC_COLOR_REVERSE
+        MENUITEM SEPARATOR
+        MENUITEM "ステータス表示(&T)\tCtrl+T",  IDC_SHOW_STATUS, CHECKED
+        MENUITEM "メニュー表示(&E)\tCtrl+E",    IDC_SHOW_MENU, CHECKED
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "ヘルプ(&H)...\tF1",           IDC_MANUAL, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "バージョン情報(&V)...\tF12",  IDC_VERSION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCEL_MAIN ACCELERATORS DISCARDABLE 
+BEGIN
+    "/",            IDC_FINDNEW,            ASCII,  NOINVERT
+    "?",            IDC_FINDNEW,            ASCII,  NOINVERT
+    "A",            IDC_QUERYALL,           VIRTKEY, CONTROL, NOINVERT
+    "B",            IDC_PAGEUP,             VIRTKEY, NOINVERT
+    "C",            IDC_TEXT_COPY,          VIRTKEY, CONTROL, NOINVERT
+    "E",            IDC_SHOW_MENU,          VIRTKEY, CONTROL, NOINVERT
+    "F",            IDC_PAGEDOWN,           VIRTKEY, NOINVERT
+    "F",            IDC_FINDNEW,            VIRTKEY, CONTROL, NOINVERT
+    "F",            IDC_FINDNEWPREV,        VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "G",            IDC_GO_TAIL,            VIRTKEY, NOINVERT
+    "G",            IDC_WEB_GOOGLE,         VIRTKEY, CONTROL, NOINVERT
+    "G",            IDC_GO_HEAD,            VIRTKEY, SHIFT, NOINVERT
+    "H",            IDC_PAGEUP,             VIRTKEY, NOINVERT
+    "H",            IDC_WIN_WIDTH,          VIRTKEY, CONTROL, NOINVERT
+    "J",            IDC_LINEDOWN,           VIRTKEY, NOINVERT
+    "K",            IDC_LINEUP,             VIRTKEY, NOINVERT
+    "L",            IDC_PAGEDOWN,           VIRTKEY, NOINVERT
+    "N",            IDC_FIND,               VIRTKEY, NOINVERT
+    "N",            IDC_FONT_SELECT,        VIRTKEY, CONTROL, NOINVERT
+    "N",            IDC_FINDPREV,           VIRTKEY, SHIFT, NOINVERT
+    "O",            IDC_FILE_OPEN,          VIRTKEY, NOINVERT
+    "O",            IDC_FILE_OPEN,          VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDC_EXIT,               VIRTKEY, NOINVERT
+    "R",            IDC_COLOR_REVERSE,      VIRTKEY, CONTROL, NOINVERT
+    "T",            IDC_SHOW_STATUS,        VIRTKEY, CONTROL, NOINVERT
+    "V",            IDC_EDITOR_KICK,        VIRTKEY, NOINVERT
+    "V",            IDC_WIN_HEIGHT,         VIRTKEY, CONTROL, NOINVERT
+    "V",            IDC_EDITOR_SELECT,      VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_DOWN,        IDC_LINEDOWN,           VIRTKEY, NOINVERT
+    VK_END,         IDC_GO_TAIL,            VIRTKEY, NOINVERT
+    VK_F1,          IDC_MANUAL,             VIRTKEY, NOINVERT
+    VK_F10,         IDC_FILTER_UTF8,        VIRTKEY, NOINVERT
+    VK_F12,         IDC_VERSION,            VIRTKEY, NOINVERT
+    VK_F3,          IDC_FIND,               VIRTKEY, NOINVERT
+    VK_F3,          IDC_FINDPREV,           VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          IDC_FILTER_AUTO,        VIRTKEY, NOINVERT
+    VK_F6,          IDC_FILTER_SJIS,        VIRTKEY, NOINVERT
+    VK_F7,          IDC_FILTER_EUC,         VIRTKEY, NOINVERT
+    VK_F8,          IDC_FILTER_JIS,         VIRTKEY, NOINVERT
+    VK_F9,          IDC_FILTER_UNICODE,     VIRTKEY, NOINVERT
+    VK_HOME,        IDC_GO_HEAD,            VIRTKEY, NOINVERT
+    VK_LEFT,        IDC_PAGEUP,             VIRTKEY, NOINVERT
+    VK_NEXT,        IDC_PAGEDOWN,           VIRTKEY, NOINVERT
+    VK_PRIOR,       IDC_PAGEUP,             VIRTKEY, NOINVERT
+    VK_RETURN,      IDC_EXIT,               VIRTKEY, NOINVERT
+    VK_RIGHT,       IDC_PAGEDOWN,           VIRTKEY, NOINVERT
+    VK_SPACE,       IDC_PAGEDOWN,           VIRTKEY, NOINVERT
+    VK_SPACE,       IDC_PAGEUP,             VIRTKEY, SHIFT, NOINVERT
+    VK_TAB,         IDC_TAB_CHANGE,         VIRTKEY, NOINVERT
+    VK_UP,          IDC_LINEUP,             VIRTKEY, NOINVERT
+    "W",            IDC_EXIT,               VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VERSION DIALOGEX 0, 0, 235, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "バージョン情報"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,175,10,45,15,BS_FLAT
+    ICON            IDI_ABROWSER,IDC_STATIC,8,8,20,20
+    LTEXT           "ANSI text Browser for Windows",IDC_STATIC,40,8,130,8
+    LTEXT           "『油鵜座』  Version 1.00",IDC_STA_TITLE,50,20,120,8
+    LTEXT           "Copyright (C) 2002 KoRoN",IDC_STATIC,40,65,80,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,35,35,190,2
+    LTEXT           "Kaoriya.net",IDC_STATIC,40,40,55,8
+    EDITTEXT        IDC_EDIT_MAIL,120,65,100,12,ES_READONLY | NOT WS_BORDER | 
+                    NOT WS_TABSTOP,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_URL,40,50,180,12,ES_READONLY | NOT WS_BORDER | 
+                    NOT WS_TABSTOP,WS_EX_RIGHT
+END
+
+IDD_EDITORCMD DIALOGEX 0, 0, 269, 71
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "エディタコマンド設定"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EXECMD_FORMAT,50,5,160,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER | WS_GROUP,WS_EX_STATICEDGE
+    PUSHBUTTON      "参照(&B)...",IDC_EXE_BROWSE,215,5,45,15,BS_FLAT
+    DEFPUSHBUTTON   "設定(&S)",IDOK,215,50,45,15,BS_FLAT
+    PUSHBUTTON      "取消(&C)",IDCANCEL,215,30,45,15,BS_FLAT | NOT 
+                    WS_TABSTOP
+    GROUPBOX        "特殊文字",IDC_STATIC,10,25,200,40,BS_FLAT
+    CTEXT           "コマンド文字列",IDC_STATIC,5,5,45,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_SPECIAL_CHAR,15,35,190,25,ES_MULTILINE | ES_READONLY | 
+                    NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_VERSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_EDITORCMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_EXIT                "ABrowserを終了する☆再見。"
+    IDC_VERSION             "ABrowserのバージョン情報を表示。"
+    IDC_MANUAL              "ヘルプファイルを表示する。"
+    IDC_FILE_OPEN           "新しいファイルを見る。"
+    IDC_QUERYALL            "テキスト全体を選択する。"
+    IDC_TEXT_COPY           "選択領域をクリップボードにコピーする。"
+    IDC_FONT_SELECT         "表示に使うフォントを変える。"
+    IDC_TAB_CHANGE          "タブ展開カラム数を、2/4/8と順次切り替える。"
+    IDC_WIN_WIDTH           "ウィンドウの幅をテキストの幅にあわせて調節する。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_FILTER_SJIS         "漢字コードをShiftJISとして読込む。"
+    IDC_FILTER_EUC          "漢字コードをeuc-jpとして読込む。"
+    IDC_FILTER_JIS          "漢字コードをJISとして読込む。"
+    IDC_FILTER_AUTO         "漢字コードを自動的に選択する。"
+    IDC_FINDNEW             "文字列を指定して、表示位置から下方向へ検索する。"
+    IDC_FIND                "既に指定されている文字列を、下方向に検索する。"
+    IDC_SHOW_STATUS         "ステータスバーの表示・非表示切替。"
+    IDC_SHOW_MENU           "メニューの表示・非表示切替。"
+    IDC_COLOR_REVERSE       "白地に黒の文字で表示する。"
+    IDC_EDITOR_SELECT       "'v'で起動するエディタを選択する。"
+    IDC_EDITOR_KICK         "現在開いているファイルをエディタで開く。"
+    IDC_WIN_HEIGHT          "ウィンドウの高さを画面の高さにあわせて調節する。"
+    IDS_SPECIAL_CHAR        "コマンド文字列中では以下のような置き換えが行われます。\r\n  $f:現在開いているファイル名\r\n  $l: 現在表示されている行番号\r\n\n用例: c:\\Vim\\gvim.exe ""$f"" +$l\r\n"
+    IDC_FILTER_UNICODE      "漢字コードをUnicodeとして読込む。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_FILTER_UTF8         "漢字コードをUTF-8として読込む。"
+    IDS_FINDERR_BOTTOM      "下方向に向かってバッファの末尾まで検索をしました。\r\n次回の検索は先頭から行ないます。"
+    IDS_FINDERR_TITLE       "検索結果報告 /ANSI text Browser"
+    IDS_FINDERR_TOP         "上方向に向かってバッファの先頭まで検索をしました。\r\n次回の検索は末尾から行ないます。"
+    IDC_FINDPREV            "既に指定されている文字列を、現在位置から上方向に検索する。"
+    IDC_FINDNEWPREV         "文字列を指定して、表示位置から上方向へ検索する。"
+    IDC_WEB_GOOGLE          "選択範囲をGoogleで検索する。"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

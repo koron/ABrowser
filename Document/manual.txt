@@ -1,0 +1,256 @@
+   [47m [35mANSI text Browser for Windows User Manual    [46m [44m       [32msince 1997.09.26   [40m
+  [47m  [35mw–û‰LÀx[30m‘€ìà–¾‘                        [46m [44m  [33mAll Produced by KoRoN   [40m
+ [47m                                              [46m [44m          [32mVersion 1.3.6   [40m
+[47m                                              [46m [44m            [33m30-Oct-2004   [40m[37m
+
+    [35m¡[37m Šî–{“I‚ÈŽg‚¢•û
+
+        [32mƒL[ƒ{[ƒh‚âƒXƒNƒ[ƒ‹ƒo[‚ðŽg‚Á‚ÄAƒeƒLƒXƒg‚ð“Ç‚Ý‚Ü‚·BƒL[ƒ{[
+        ƒh‚É‚æ‚éŠî–{“I‚È‘€ì‚ÍˆÈ‰º‚Ì’Ê‚è‚Å‚·B[37m
+
+                      [47m                               [40m
+                      [30m[47m  1si‚ß‚é       :ƒJ[ƒ\ƒ‹‰º  [40m
+                      [34m[47m  1s–ß‚é         :ƒJ[ƒ\ƒ‹ã  [40m
+                      [30m[47m  1‰æ–Êi‚ß‚é     :ƒJ[ƒ\ƒ‹‰E  [40m
+                      [34m[47m  1‰æ–Ê–ß‚é       :ƒJ[ƒ\ƒ‹¶  [40m
+                      [30m[47m  I—¹            :Ctrl+W      [40m
+                      [47m                               [37m[40m
+
+        ‚±‚ê‚¾‚¯‚Å‚±‚ÌABrowser‚ÌŽg‚¢•û‚Í[33mƒoƒbƒ`ƒŠ[37m‚Å‚·B
+
+    [35m¡[37m ‹@”\EƒL[‘€ìˆê——
+
+        [32mABrowser‚É‚ÍŽv‚¢‚Ì‚Ù‚©‘½‚­‚Ì‹@”\‚ª‚ ‚è‚Ü‚·B‚±‚±‚Å‚Í‚»‚ê‚ç‚ðŽg‚¤
+        ‚½‚ß‚ÌƒL[‘€ì‚ðÐ‰î‚µ‚Ü‚·B‹@”\‚Ì’†‚É‚Í•¡”‚ÌƒL[‚ðŠ„‚è“–‚Ä‚Ä‚ 
+        ‚é‚à‚Ì‚à‚ ‚è‚Ü‚·‚ªA‚»‚ê‚Í‚Ç‚ÌƒL[‚ðŽg‚Á‚Ä‚à“¯‚¶‹@”\‚ª“­‚«‚Ü‚·B
+        ‚Ü‚½A‚±‚ê‚ç‚Ì‹@”\‚Íƒƒjƒ…[‚©‚ç‘I‘ð‚µ‚ÄAŽg—p‚·‚éŽ–‚à‰Â”\‚Å‚·B
+        ‚È‚¨Še‹@”\‚ÌÚ×‚ÍˆÈ‰º‚ÌÍ‚Åà–¾‚µ‚Ü‚·B[37m
+
+          [47m                                                         [40m
+          [30m[47m  ƒtƒ@ƒCƒ‹‚ðŠJ‚­  :O Ctrl+O                              [40m
+          [30m[47m  ƒGƒfƒBƒ^‚ÅŠJ‚­  :V                                     [40m
+          [30m[47m  GoogleŒŸõ      :Ctrl+G                                [40m
+          [30m[47m  ShiftJIS        :F6                                    [40m
+          [30m[47m  euc-jp          :F7                                    [40m
+          [30m[47m  JIS             :F8                                    [40m
+          [30m[47m  Unicode         :F9                                    [40m
+          [30m[47m  UTF-8           :F10                                   [40m
+          [30m[47m  Ž©“®‘I‘ð        :F5                                    [40m
+          [30m[47m  I—¹            :Ctrl+W Q ƒŠƒ^[ƒ“ƒL[ Alt+F4          [40m
+          [47m                                                         [40m
+          [34m[47m  ƒRƒs[          :Ctrl+C                                [40m
+          [34m[47m  ŒŸõ            :F3 N                                  [40m
+          [34m[47m  ‹t•ûŒüŒŸõ      :Shift+F3 Shift+N                      [40m
+          [34m[47m  V‹KŒŸõ        :Ctrl+F /                              [40m
+          [34m[47m  V‹K‹t•ûŒüŒŸõ  :Ctrl+Shift+F ?                        [40m
+          [34m[47m  ‘S•¶‚ð‘I‘ð      :Ctrl+A                                [40m
+          [47m                                                         [40m
+          [30m[47m  ƒtƒHƒ“ƒgÝ’è    :Ctrl+N                                [40m
+          [30m[47m  ƒ^ƒu2/4/8Ø‘Ö   :Tab                                   [40m
+          [30m[47m  ƒGƒfƒBƒ^Ý’è    :Ctrl+Shift+V                          [40m
+          [47m                                                         [40m
+          [34m[47m  ‘‹•Ž©“®Ý’è    :Ctrl+H                                [40m
+          [34m[47m  ‘‹‚Ž©“®Ý’è    :Ctrl+V                                [40m
+          [34m[47m  ƒJƒ‰[”½“]      :Ctrl+R                                [40m
+          [34m[47m  ƒXƒe[ƒ^ƒX•\Ž¦  :Ctrl+T                                [40m
+          [34m[47m  ƒƒjƒ…[•\Ž¦    :Ctrl+E                                [40m
+          [47m                                                         [40m
+          [30m[47m  ƒo[ƒWƒ‡ƒ“î•ñ  :F12                                   [40m
+          [47m                                                         [40m
+          [34m[47m  1si‚ß‚é       :ƒJ[ƒ\ƒ‹‰º J                          [40m
+          [34m[47m  1s–ß‚é         :ƒJ[ƒ\ƒ‹ã K                          [40m
+          [34m[47m  1‰æ–Êi‚ß‚é     :ƒJ[ƒ\ƒ‹‰E F L ƒXƒy[ƒX PageDown      [40m
+          [34m[47m  1‰æ–Ê–ß‚é       :ƒJ[ƒ\ƒ‹¶ B H Shift+ƒXƒy[ƒX PageUp  [40m
+          [34m[47m  æ“ª‚Ö          :Shift+G Home                          [40m
+          [34m[47m  ––”ö‚Ö          :G End                                 [40m
+          [47m                                                         [37m[40m
+
+
+    [35m¡[37m ‹@”\Ú×
+
+        [32mŠe‹@”\‚ð‘ã•\“I‚ÈƒL[‘€ì‚Æ‹¤‚ÉÚ×‚Éà–¾‚µ‚Ä‚¢‚Ü‚·B[37m
+
+      [36mœ ƒtƒ@ƒCƒ‹‚ðŠJ‚­(Ctrl+O)[37m
+        •Ê‚Ì•¶Íƒtƒ@ƒCƒ‹‚ð“Ç‚Ý‚½‚¢Žž‚ÉŽg‚¢‚Ü‚·BŠJ‚¢‚½ƒ_ƒCƒAƒƒO‚Å“Ç‚Ý‚½
+        ‚¢ƒtƒ@ƒCƒ‹‚ð‘I‘ð‚µ‚Ü‚·BABrowser‚ÌƒAƒCƒRƒ“‚âƒEƒBƒ“ƒhƒE‚ÉAƒhƒ‰ƒb
+        ƒO&ƒhƒƒbƒv‚·‚é‚±‚Æ‚Å‚àŠJ‚­Ž–‚ªo—ˆ‚Ü‚·Bƒtƒ@ƒCƒ‹‚ÌŽí—Þ‚Æ‚ÌŠÖ˜A
+        •t‚¯‚ào—ˆ‚é‚Ì‚ÅA¥”ñ—˜—p‚µ‚Ä‰º‚³‚¢B
+
+      [36mœ ƒGƒfƒBƒ^‚ÅŠJ‚­(V)[37m
+        Œ»ÝŠJ‚¢‚Ä‚¢‚éƒtƒ@ƒCƒ‹‚ðŽw’è‚µ‚½ƒGƒfƒBƒ^‚ÅŠJ‚«‚Ü‚·B“Á‚ÉŽw’è‚µ‚Ä
+        ‚¢‚È‚¢ê‡‚É‚Íƒƒ‚’ (notepad.exe)‚ðŽg—p‚µ‚Ü‚·BƒGƒfƒBƒ^‚ÌŽw’è‚Í
+        ƒƒjƒ…[‚©‚çuÝ’èv¨uƒGƒfƒBƒ^Ý’èv‚Ås‚¢‚Ü‚·B
+                    [31m¦ƒGƒfƒBƒ^‚É“n‚·‚Æ‚«‚É‚ÍŠ¿ŽšƒR[ƒh‚Ì•ÏŠ·‚ð‚µ‚Ü‚¹‚ñB
+
+      [36mœ GoogleŒŸõ(Ctrl+G)[37m
+        Œ»Ý‘I‘ð‚µ‚Ä‚¢‚é’PŒê‚É‚Â‚¢‚ÄGoogle‚ÅŒŸõ‚µ‚Ü‚·B
+
+      [36mœ [32mŠ¿ŽšƒR[ƒh>[36m ShiftJIS(F6)[37m
+        Œ»ÝŠJ‚¢‚Ä‚¢‚é•¶Íƒtƒ@ƒCƒ‹‚ð[33m‹­§“I‚ÉShiftJIS‚Æ‚µ‚Ä•\Ž¦[37m‚µ‚Ü‚·BŠ¿
+        ŽšƒR[ƒh”»’è‚ªŠÔˆá‚Á‚Ä‚¢‚½ê‡‚È‚Ç‚ÉŽg—p‚µ‚Ü‚·B‚È‚¨Œ»ÝAŠ¿ŽšƒR
+        [ƒh‚ª‚Ç‚Ì‚æ‚¤‚É”»’è‚³‚ê‚Ä‚¢‚é‚©‚ÍAƒXƒe[ƒ^ƒXƒo[‚É•\Ž¦‚³‚ê‚Ä‚¢
+        ‚Ü‚·B
+
+      [36mœ [32mŠ¿ŽšƒR[ƒh>[36m euc-jp(F7)[37m
+        Œ»ÝŠJ‚¢‚Ä‚¢‚é•¶Íƒtƒ@ƒCƒ‹‚ð[33m‹­§“I‚Éeuc-jp‚Æ‚µ‚Ä•\Ž¦[37m‚µ‚Ü
+        ‚·BˆÈ‰º—ªB
+
+      [36mœ [32mŠ¿ŽšƒR[ƒh>[36m JIS(F8)[37m
+        Œ»ÝŠJ‚¢‚Ä‚¢‚é•¶Íƒtƒ@ƒCƒ‹‚ð[33m‹­§“I‚ÉJIS‚Æ‚µ‚Ä•\Ž¦[37m‚µ‚Ü‚·BˆÈ‰º—ªB
+
+      [36mœ [32mŠ¿ŽšƒR[ƒh>[36m Unicode(F9)[37m
+        Œ»ÝŠJ‚¢‚Ä‚¢‚é•¶Íƒtƒ@ƒCƒ‹‚ð[33m‹­§“I‚ÉUnicode‚Æ‚µ‚Ä•\Ž¦[37m‚µ‚Ü‚·Bƒf
+        ƒtƒHƒ‹ƒg‚Å‚ÍƒŠƒgƒ‹ƒGƒ“ƒfƒBƒAƒ“‚ð‰¼’è‚µ‚Ü‚·‚ªABOM‚ª‘¶Ý‚·‚éê‡
+        ‚Í‚»‚ê‚É]‚¢‚Ü‚·BˆÈ‰º—ªB
+
+      [36mœ [32mŠ¿ŽšƒR[ƒh>[36m UTF-8(F10)[37m
+        Œ»ÝŠJ‚¢‚Ä‚¢‚é•¶Íƒtƒ@ƒCƒ‹‚ð[33m‹­§“I‚ÉUTF-8‚Æ‚µ‚Ä•\Ž¦[37m‚µ‚Ü‚·BˆÈ‰º
+        —ªB
+
+      [36mœ [32mŠ¿ŽšƒR[ƒh>[36m Ž©“®‘I‘ð(F5)[37m
+        Œ»ÝŠJ‚¢‚Ä‚¢‚éƒtƒ@ƒCƒ‹‚ðA–û‰LÀ‚ÌŠ¿ŽšƒR[ƒh”»’èŒ‹‰Ê‚É]‚Á‚Ä•\Ž¦
+        ‚µ‚Ü‚·B
+
+      [36mœ I—¹(Ctrl+W)[37m
+        ABrowser‚ð[33mI—¹[37m‚µ‚Ü‚·BƒŠƒ^[ƒ“ƒL[‚ðƒVƒ‡[ƒgƒJƒbƒgƒL[‚ÉŠ„‚è“–‚Ä
+        ‚Ä‚¢‚é‚Ì‚ÅAƒtƒ@ƒCƒ‹‚ÌŽí—Þ‚ÆŠÖ˜A•t‚¯‚Ä‚¨‚¯‚ÎAƒŠƒ^[ƒ“ƒL[‚Åƒtƒ@
+        ƒCƒ‹‚ðƒI[ƒvƒ“‚µ‚ÄAJKLM‚ÌŠeƒL[‚ÅƒXƒNƒ[ƒ‹‚³‚¹‚Ä–Ú‚ð’Ê‚µAƒŠƒ^
+        [ƒ“ƒL[‚ÅI—¹‚·‚éA‚Æ‚¢‚¤‘€ì‚ªƒXƒ€[ƒY‚És‚¦‚Ü‚·B
+
+      [36mœ ƒRƒs[(Ctrl+C)[37m
+        ‘I‘ð‚³‚ê‚½•¶Í‚ª‚ ‚éê‡‚É‚ÍA‚»‚Ì•¶Í‚ð[33mƒNƒŠƒbƒvƒ{[ƒh‚ÉƒRƒs[[37m‚µ
+        ‚Ü‚·B‚±‚Ì‹@”\‚ð—˜—p‚µ‚ÄA‚¨‹C‚É“ü‚è‚ÌƒeƒLƒXƒgƒGƒfƒBƒ^‚âƒ[ƒvƒ
+        ƒ\ƒtƒg‚ÖAŽèŒy‚Éƒf[ƒ^“]‘—‚ªs‚¦‚Ü‚·B
+                        [31m¦•¶Í‚Ì‘I‘ð‚Íƒ}ƒEƒX‚Ìƒhƒ‰ƒbƒO‚É‚æ‚Á‚Äs‚¦‚Ü‚·B[37m
+
+      [36mœ ŒŸõ(F3)[37m
+        [33mŽw’è‚µ‚½ŒŸõ•¶Žš—ñ‚ð’T‚µ‚Ü‚·[37mB‚»‚êˆÈ‘O‚É[33mV‹KŒŸõ(Ctrl+F)[37m‚É‚æ‚Á‚Ä
+        Žw’è‚µ‚½ŒŸõ•¶Žš—ñ‚ðŽg—p‚µAŒŸõŠJŽnˆÊ’u‚Í‘O‰ñ‚ÌŒŸõˆê’vêŠ‚©‚ç
+        ‚Å‚·B‚Ü‚½ƒtƒ@ƒCƒ‹‚ÌÅŒã‚Ü‚ÅŒŸõ‚µI‚í‚é‚ÆAƒƒbƒZ[ƒWƒ{ƒbƒNƒX‚ª
+        ‚Å‚Ü‚·B•¶Žš—ñ‚ª–¢Ý’è‚Ìê‡‚ÍAì“®‚µ‚Ü‚¹‚ñB
+
+      [36mœ ‹t•ûŒüŒŸõ(Shift+F3)[37m
+        [33mŽw’è‚µ‚½ŒŸõ•¶Žš—ñ‚ðã•ûŒü‚É’T‚µ‚Ü‚·[37mB‚»‚êˆÈ‘O‚É[33mV‹KŒŸõ(Ctrl+F)[37m
+        ‚É‚æ‚Á‚ÄŽw’è‚µ‚½ŒŸõ•¶Žš—ñ‚ðŽg—p‚µAŒŸõŠJŽnˆÊ’u‚Í‘O‰ñ‚ÌŒŸõˆê’v
+        êŠ‚©‚ç‚Å‚·B‚Ü‚½ƒtƒ@ƒCƒ‹‚Ìæ“ª‚Ü‚ÅŒŸõ‚µI‚í‚é‚ÆAƒƒbƒZ[ƒW
+        ƒ{ƒbƒNƒX‚ª‚Å‚Ü‚·B•¶Žš—ñ‚ª–¢Ý’è‚Ìê‡‚ÍAì“®‚µ‚Ü‚¹‚ñB
+
+      [36mœ V‹KŒŸõ(Ctrl+F)[37m
+        [33m•¶Žš—ñ‚ðŽw’è‚µ‚ÄAV‚½‚ÉŒŸõ‚ðŠJŽn[37m‚µ‚Ü‚·BŒŸõŠJŽnˆÊ’u‚ÍŒ»Ý‚Ì•\
+        Ž¦ˆÊ’u‚Å‚·B“¯‚¶•¶Žš—ñ‚Å‘±‚¯‚ÄŒŸõ‚ðs‚¤ê‡‚ÍA[33mŒŸõ(F3)[37m‚ðŽg—p‚·
+        ‚é‚Æ•Ö—˜‚Å‚·B
+
+      [36mœ V‹K‹t•ûŒüŒŸõ(Ctrl+Shift+F)[37m
+        [33m•¶Žš—ñ‚ðŽw’è‚µ‚ÄAV‚½‚Éã•ûŒü‚ÉŒŸõ‚ðŠJŽn‚µ‚Ü‚·[37mBŒŸõŠJŽnˆÊ’u‚Í
+        Œ»Ý‚Ì•\Ž¦ˆÊ’u‚Å‚·B“¯‚¶•¶Žš—ñ‚Å‘±‚¯‚Äã•ûŒü‚ÉŒŸõ‚ðs‚¤ê‡‚ÍA
+        [33mŒŸõ(Shift+F3)[37m‚ðŽg—p‚·‚é‚Æ•Ö—˜‚Å‚·B
+
+      [36mœ ‘S•¶‘I‘ð(Ctrl+A)[37m
+        [33mƒtƒ@ƒCƒ‹‘S‘Ì‚ð‘I‘ð[37m‚µ‚Ü‚·BƒNƒŠƒbƒvƒ{[ƒh‚ÉƒRƒs[‚ªŽæ‚ê‚Ü‚·B
+
+      [36mœ ƒtƒHƒ“ƒgÝ’è(Ctrl+N)[37m
+        ƒeƒLƒXƒg‚ð•\Ž¦‚·‚éƒtƒHƒ“ƒgAƒTƒCƒY‚ð‘I‘ð‚·‚éŽ–‚ªo—ˆ‚Ü‚·B‘I‘ð‚µ
+        ‚½ƒtƒHƒ“ƒg‚ÍƒŒƒWƒXƒgƒŠ‚É‚æ‚Á‚Ä•Û‘¶‚³‚êAŽŸ‰ñ‚Ì‹N“®Žž‚É‚à“¯‚¶ƒtƒH
+        ƒ“ƒgAƒTƒCƒY‚ªŽg—p‚³‚ê‚Ü‚·BƒtƒHƒ“ƒg‘I‘ðƒ_ƒCƒAƒƒO‚ª•\Ž¦‚³‚êAŒÅ
+        ’è•ƒtƒHƒ“ƒg‚ª‘I‘ð‚Å‚«‚Ü‚·B‚±‚±‚ÅŽÎ‘Ì‚â‘¾ŽšƒtƒHƒ“ƒg‚ð‘I‘ð‚·‚éŽ–
+        ‚Í‰Â”\‚Å‚·‚ªA‚»‚ê‚ç‚ðŽg—p‚µ‚½ê‡‚Í•\Ž¦‚ª‘½­—‚ê‚éŽ–‚ª—L‚è‚Ü‚·B
+        ‚²—¹³‚­‚¾‚³‚¢BƒfƒtƒHƒ‹ƒg‚Å‚Í[33mTerminal‚ÌƒTƒCƒY14[37m‚ðŽg—p‚µ‚Ü‚·B
+
+        [31m¦’ˆÓ[37m Windows‚Ì«Ž¿ãTrueType‚ÌŒÅ’è•ƒtƒHƒ“ƒg‚ÍAŒµ–§‚É‚ÍŒÅ’è•
+        ‚É‚Í‚È‚è‚Ü‚¹‚ñB‚±‚¤‚¢‚Á‚½ƒtƒHƒ“ƒg‚ðŽg—p‚·‚éê‡‚É‚ÍA•¶Žš‚ÌˆÊ’u
+        ‚ª—ñ‚ÅƒYƒŒ‚é‚Ù‚©Aƒ}ƒEƒX‚É‚æ‚é—Ìˆæ‘I‘ð‚ÌÛ‚É‘½­‚ÌƒYƒŒ‚ð¶‚¶‚½‚èA
+        •\Ž¦‚ª—‚ê‚Ü‚·B‚±‚Ìó‹µ‚ð‰ñ”ð‚·‚é‚É‚ÍATrueTypeˆÈŠO‚ÌƒtƒHƒ“ƒg(
+        —á:Terminal)‚ðŽg—p‚·‚é‚©ATrueType‚Å‚àƒTƒCƒY‚ð6‚Ì”{”‚ÉÝ’è‚·‚é
+        •K—v‚ª—L‚è‚Ü‚·B
+
+      [36mœ ƒ^ƒu2/4/8Ø‘Ö(Tab)[37m
+        [33mƒ^ƒu“WŠJƒJƒ‰ƒ€”‚ÌØ‘Ö‹@”\[37m‚Å‚·B2/4/8ƒJƒ‰ƒ€‚ðƒgƒOƒ‹Ž®‚ÉØ‚è‘Ö‚¦
+        ‚éŽ–‚ª‚Å‚«A‹N“®Žž‚É‚Í[33m‘O‰ñ‚ÌI—¹Žž‚Æ“¯‚¶ƒJƒ‰ƒ€[37m”‚É‚È‚è‚Ü‚·Bƒ^ƒu
+        ƒR[ƒh‚Í“WŠJ‚³‚ê‚éƒJƒ‰ƒ€”‚ª’è‹`‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBƒGƒfƒBƒ^‚²‚Æ‚É“Æ
+        Ž©‚Ì’è‹`‚ðs‚¦‚é‚±‚Æ‚ª‘½‚¢‚Ì‚Å‚·‚ªA“`““I‚É4ƒJƒ‰ƒ€‚©8ƒJƒ‰ƒ€‚ª‘I
+        ‘ð‚³‚ê‚é‚±‚Æ‚ª‘½‚¢‚æ‚¤‚Å‚·B
+
+      [36mœ ƒGƒfƒBƒ^Ý’è[37m
+        uƒGƒfƒBƒ^‚ÅŠJ‚­v‚Å‹N“®‚³‚ê‚éƒGƒfƒBƒ^(‚à‚µ‚­‚ÍƒRƒ}ƒ“ƒh)‚ðŽw’è‚·
+        ‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B‰Šúó‘Ô‚Å‚Í‚±‚Ì‚æ‚¤‚É’è‹`‚³‚ê‚Ü‚·:
+            [47m [34mnotepad.exe -$f[37m [40m
+        ’è‹`’†‚Ì$f‚ÍŒ»ÝŠJ‚¢‚Ä‚¢‚éƒtƒ@ƒCƒ‹–¼‚ÉA$l‚ÍŒ»ÝŒ©‚Ä‚¢‚és”(‰æ
+        –Ê‚Ìæ“ª)‚É“WŠJ‚³‚ê‚Ü‚·BgVim‚ÉŒ©‚Ä‚¢‚éƒtƒ@ƒCƒ‹‚ðŠJ‚©‚¹‚é‚Ì‚È‚ç
+        ‚ÎŽŸ‚Ì‚æ‚¤‚ÈŽw’è‚ª‰Â”\‚Å‚·:
+            [47m [34mgvim.exe $f +$l[37m [40m
+
+      [36mœ ‘‹•Ž©“®Ý’è(Ctrl+H)[37m
+        ƒƒjƒ…[‚Å‚ÍuƒEƒBƒ“ƒhƒEv¨u•Ž©“®Ý’èv‚É‚æ‚Á‚ÄŽÀs‚Å‚«‚Ü‚·B
+        ‚±‚Ì‹@”\‚ðŽg—p‚·‚é‚ÆAABrowser‚Íƒtƒ@ƒCƒ‹“à‚Ìˆê”Ô’·‚¢s‚É‚ ‚í‚¹‚ÄA
+        [33mƒEƒBƒ“ƒhƒE‚Ì•‚ðŽ©“®“I‚É’²®[37m‚µ‚Ü‚·B’²®‚³‚ê‚½Œã‚Ì•‚ÍAƒeƒLƒXƒg
+        ‚Ì¶‰E‚É‚¢‚­‚ç‚©‚Ìƒ}[ƒWƒ“‚ðl—¶‚µ‚½‚à‚Ì‚É‚È‚è‚Ü‚·Bƒtƒ@ƒCƒ‹‚ðŠJ
+        ‚¢‚Ä‚¢‚È‚¢Žž‚É•Ž©“®Ý’è‚ðs‚È‚¤‚Æ[33m80•¶Žš•[37m‚ÉÝ’è‚³‚ê‚Ü‚·B
+
+      [36mœ ‘‹‚Ž©“®Ý’è(Ctrl+V)[37m
+        ƒƒjƒ…[‚Å‚ÍuƒEƒBƒ“ƒhƒEv¨u‚‚³Ž©“®Ý’èv‚É‚æ‚Á‚ÄŽÀs‚Å‚«‚Ü‚·B
+        ‚±‚Ì‹@”\‚ðŽg—p‚·‚é‚ÆABrowser‚ÍA‰æ–Ê‚Ì‘å‚«‚³‚É‚ ‚í‚¹‚Ä[33mu“K“–v[37m‚É
+        ‚‚³‚ð’²ß‚µ‚Ü‚·B[33mÅ‘å‚‚Í66s[37m+ƒ¿‚Å‚·B
+
+      [36mœ ƒJƒ‰[”½“](Ctrl+R)[37m
+        ƒfƒtƒHƒ‹ƒg‚Ì•’n‚É”’•¶Žš‚ª‹C‚É“ü‚ç‚È‚¢ê‡A‚±‚Ì‹@”\‚ðŽg—p‚·‚é‚±
+        ‚Æ‚Å”’’n‚ÉØ‚è‘Ö‚¦‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B‚Ü‚½”’’n‚Ìó‘Ô‚©‚ç•’n‚ÉØ‚è
+        ‘Ö‚¦‚éê‡‚à‚±‚Ì‹@”\‚ðŽg—p‚µ‚Ü‚·B‚½‚¾‚µ‚±‚Ì‹@”\‚ðŽg‚Á‚½‚Æ‚±‚ë‚Å
+        ÔŽš‚ª•Žš‚É“]Š·‚·‚é‚Æ‚¢‚¤‚±‚Æ‚Í‚È‚¢‚Ì‚Å’ˆÓ‚ª•K—v‚Å‚·B
+
+      [36mœ ƒXƒe[ƒ^ƒX•\Ž¦(Ctrl+T)[37m
+        ƒEƒBƒ“ƒhƒE‰º•”‚É‚ ‚éA–û‰LÀ‚Ì—lX‚È“®ìó‹µ‚ð•\Ž¦‚µ‚Ä‚¢‚éƒXƒe[
+        ƒ^ƒXƒo[‚ÌA•\Ž¦E”ñ•\Ž¦‚ðØ‚è‘Ö‚¦‚éŽ–‚ª‚Å‚«‚Ü‚·BŒ»Ý‚Ì•\Ž¦ó‘Ô
+        ‚ÍŽŸ‰ñ‚Ì‹N“®‚É”½‰f‚³‚ê‚Ü‚·B
+
+      [36mœ ƒƒjƒ…[•\Ž¦(Ctrl+E)[37m
+        ƒEƒBƒ“ƒhƒEã•”‚É‚ ‚éA–û‰LÀ‚Ì—lX‚È‹@”\‚ðŽÀs‚·‚é‚½‚ß‚Ìƒƒjƒ…[
+        ƒo[‚ÌA•\Ž¦E”ñ•\Ž¦‚ðØ‚è‘Ö‚¦‚éŽ–‚ª‚Å‚«‚Ü‚·B‚½‚¾‚µƒƒjƒ…[‚ð”ñ
+        •\Ž¦‚É‚µ‚½ê‡‚É‚ÍA[33mƒVƒ‡[ƒgƒJƒbƒgƒL[‚Å‚ ‚éCtrl+E‚Å‚µ‚©AÄ•\Ž¦
+        ‚·‚éŽ–‚Í‚Å‚«‚È‚­‚È‚é[37m‚Ì‚Å[31m’ˆÓ[37m‚ª•K—v‚Å‚·B•\Ž¦ó‘Ô‚ÍŽŸ‰ñ‚Ì‹N“®‚É”½
+        ‰f‚³‚ê‚Ü‚·B
+
+
+
+    [35m¡[37m ‚“x‚Èî•ñ
+
+        [32m‚±‚±‚É‚Í‚¿‚å‚Á‚Æ‚µ‚½Ž–‚ð‘‚¢‚Ä‚ ‚è‚Ü‚·B‚È‚É‚©ABrowser‚Ì“®ì‚ÅA
+        ‹^–â‚ÉŽv‚¤‚Æ‚±‚ë‚ª—L‚Á‚½‚ç“Ç‚ñ‚Å‚Ý‚Ä‚­‚¾‚³‚¢B[37m
+
+      [36mœ 2d‹N“®‚Ì”é–§[37m
+        –û‰LÀ‚ð2‚ÂˆÈã‹N‚¿ã‚°‚é‚Æ‚Ç‚¤‚È‚é‚Ì‚Å‚µ‚å‚¤‚©B‘‹ˆÊ’uAƒtƒHƒ“
+        ƒgAƒƒjƒ…[EƒXƒe[ƒ^ƒX‚Ì•\Ž¦ó‘Ô‚ÍA‚Ç‚Ì–û‰LÀ‚Ì‚à‚Ì‚ª•ÛŽ‚³‚ê
+        ‚é‚Ì‚Å‚µ‚å‚¤‚©?B“š‚¦‚Å‚·B‚±‚¤‚¢‚¤Žž‚ÍŠî–{“I‚ÉA[33mÅ‰‚É‹N“®‚µ‚½
+        –û‰LÀ‚Ì‚à‚Ì‚ªƒZ[ƒu[37m‚³‚ê‚Ü‚·B‚½‚¾‚µ[33mƒtƒHƒ“ƒg‚ÉŠÖ‚µ‚Ä‚Í—áŠO[37m“I‚ÉA
+        ÅŒã‚ÉI—¹‚µ‚½–û‰LÀ‚ÌÝ’è‚ªŽŸ‰ñ‚Ì‹N“®Žž‚É—LŒø‚É‚È‚è‚Ü‚·B
+
+      [36mœ ’·‚¢s‚Ìˆ—[37m
+        –û‰LÀ‚ÍA80•¶Žš‚æ‚è[33m’·‚¢s‚ðŽ©“®“I‚ÉÜ‚è•Ô‚µ‚Ä•\Ž¦[37m‚µ‚Ä‚¢‚Ü‚·B‚Å
+        ‚·‚©‚ç‘‹•Ž©“®Ý’è‹@”\‚ÍÅ‘å‚Å‚à80•¶Žš•ª‚µ‚©Šm•Û‚µ‚Ü‚¹‚ñB–{“–‚Í
+        Ü‚è•Ô‚µˆÊ’u‚ðŽ©—R(–Ü˜_‡‚É‚à)‚ÉÝ’è‚Å‚«‚é‚æ‚¤‚ÈƒR[ƒh‚ÉA“à•”“I
+        ‚É‚Í‚µ‚Ä‚ ‚é‚Ì‚Å‚·‚ªAƒCƒ“ƒ^ƒtƒF[ƒX•”•ª‚ª•¡ŽG‚É‚È‚é‚Ì‚ÅAŽg‚¦‚È
+        ‚¢‹@”\‚Ì1‚Â‚É‚È‚Á‚Ä‚¢‚Ü‚·B
+
+      [36mœ ƒ^ƒuƒR[ƒh‚ÆƒRƒs[[37m
+        ƒ^ƒuƒR[ƒh‚ÍABrowser‚É‚æ‚Á‚ÄƒXƒy[ƒX(0x20)‚É“WŠJ‚³‚ê‚Ü‚·B‚»‚Ìƒ^
+        ƒuƒR[ƒh‚Ì•”•ª‚ð‘I‘ð‚µ‚ÄƒRƒs[‚·‚é‚Æ‚Ç‚¤‚È‚é‚Ì‚Å‚µ‚å‚¤‚©?B“š‚¦
+        ‚ÍA[33m•¡”‚ÌƒXƒy[ƒX[37m‚É‚È‚Á‚Ä‚µ‚Ü‚¤BC‚Ìƒ\[ƒX‚È‚Ç‚ðƒRƒs[‚µ‚½‚¢Žž
+        ‚É‚Í¢‚è‚Ü‚·‚ªA‚±‚¤‚¢‚Á‚½Žd—l‚È‚Ì‚Å—eŽÍ‚µ‚Ä‰º‚³‚¢B‚ ‚Ü‚è‚É•s•]
+        ‚È‚ç‚Î[33mˆêl[37m‚µ‚Ü‚·B
+
+      [36mœ ƒCƒ“ƒeƒŠƒ}ƒEƒX((Š”)ƒ}ƒCƒNƒƒ\ƒtƒg)[37m
+        1ƒ[ƒŠƒ“ƒO3s‚ÉÝ’è‚µ‚Ä‚ ‚è‚Ü‚·Bu‚Ç‚±‚Å‚àƒzƒC[ƒ‹v‚Ì‚æ‚¤‚ÈA
+        ƒCƒ“ƒeƒŠƒ}ƒEƒXŽx‰‡ƒ\ƒtƒg‚ðŽg—p‚·‚éê‡‚ÍAƒNƒ‰ƒXABrowser‚ÌƒXƒNƒ
+        [ƒ‹s‚ð0‚ÉÝ’è‚·‚é‚Æ—Ç‚¢‚Å‚µ‚å‚¤B
+
+      [36mœ ƒo[ƒWƒ‡ƒ“î•ñ[37m
+        F12‚É‚Ä•\Ž¦‚³‚ê‚éƒo[ƒWƒ‡ƒ“î•ñ‚Å‚·‚ªAŽÀ‚ÍURL‚Æƒ[ƒ‹ƒAƒhƒŒƒX‚Ì
+        •”•ª‚ÍA•ÏX•s‰Â‚ÌƒGƒfƒBƒbƒgƒ{ƒbƒNƒX‚Å‚Å‚«‚Ä‚¢‚Ü‚·B‚æ‚Á‚Äƒ_ƒuƒ‹
+        ƒNƒŠƒbƒN‚Å‘I‘ð‚µ‚ÄƒRƒs[‚·‚ê‚ÎAŠÈ’P‚ÉÄ—˜—p‚ªo—ˆ‚Ü‚·BÅV”Å‚Ì
+        ƒ_ƒEƒ“ƒ[ƒh‚âAƒ[ƒ‹‚ð‘—‚Á‚Ä‚¢‚½‚¾‚­Žž‚ÉŽg‚Á‚Ä‰º‚³‚¢B[33m±×‚È[37mŽ–
+        ‚È‚ñ‚Å‚·‚ªcB
+
+[44m [33m[32m¶[33m‚«‚é[32mŽ–[33m‚Ö‚Ì[32m‹­[33m‚¢ [46m [47m  [31mKoRoN [35m(MURAOKA Taro/‘º‰ª‘¾˜Y)                          [40m
+ [44m [33m[32mˆÓŽu[33m‚ª[32m“¯Žž[33m‚É[32mŽ©•ª [46m [47m    [30me-mail [34mkoron@tka.att.ne.jp                           [40m
+  [44m [33m‚Æ[32mˆÙ[33m‚È‚é[32m¶–½[33m‚ð‚à [46m [47m  [31mKaoriYa.net [30mURL [36m(You can get latest ABrowser here!)    [40m
+   [44m [33m[32m‘¸[33m‚Ô[32mS[33m‚Æ‚È‚é     [46m [47m    [34mhttp://www.kaoriya.net/                              [40m
+[30m vi:set ts=8 sts=4 sw=4 et tw=72 fo-=t:

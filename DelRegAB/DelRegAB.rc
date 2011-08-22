@@ -1,0 +1,134 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2002,3,30,4
+ PRODUCTVERSION 1,2,1,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "ABrowserが使用しているレジストリを削除します。\0"
+            VALUE "CompanyName", "KaoriYa\0"
+            VALUE "FileDescription", "ABrowser用レジストリ削除プログラム\0"
+            VALUE "FileVersion", "2002, 3, 30, 4\0"
+            VALUE "InternalName", "DelRegAB\0"
+            VALUE "LegalCopyright", "2002 (C) MURAOKA Taro (KoRoN)/KaoriYa\0"
+            VALUE "LegalTrademarks", "DelReg(TM)\0"
+            VALUE "OriginalFilename", "DelRegAB.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Delete Registory of ABrowser\0"
+            VALUE "ProductVersion", "1, 2, 1, 3\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_DELREGAB            ICON    DISCARDABLE     "Resource\\DelRegAB.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DLG_TITLE           "Delete Registory of ABrowser"
+    IDS_DLG_TEXT            "ANSI text Browserの使用しているレジストリ項目を削除します。\r\nレジストリを削除すると、今まで設定・使用していたウィンドウの\r\n位置・大きさ、フォントの種類などの各情報は失われてしまいます。\r\n再びABrowserを使用する時には注意して下さい。\r\n\r\nレジストリを削除した後は、各ファイルを削除すれば\r\nアンインストールは完了です。それではレジストリを削除します。\r\nよろしいですか?"
+    IDS_NODEL_TITLE         "Not Deleted"
+    IDS_NODEL_TEXT          "レジストリは削除されませんでした。\r\n削除をしたい時はもう一度DelRegABを実行し、\r\n「はい」のボタンを押して下さい。"
+    IDS_DEL_TITLE           "Deleted"
+    IDS_DEL_TEXT            "ABrowserのご使用ありがとうございました。\r\n今、レジストリを無事に削除しました。\r\nまたKoRoNのソフトを使って下さいね。\r\n\r\nでは再見☆(^^)/~~~"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
